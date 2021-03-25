@@ -1,0 +1,18 @@
+#canvas {
+    background-color: #f4f2f2;
+    padding: 10px;
+    outline: black 1px solid;
+    margin: auto;
+    display: block;
+}
+
+#menu {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#topofpage {
+    margin: auto;
+    text-align:center;
+}

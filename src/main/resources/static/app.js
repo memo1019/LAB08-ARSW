@@ -7,9 +7,11 @@ var app = (function () {
         $("#disconnect").prop("disabled", !connected);
         if (connected) {
             $("#pointslist").show();
+            $("#canvas").show();
         }
         else {
             $("#pointslist").hide();
+            $("#canvas").hide();
         }
         $("#points").html("");
     }

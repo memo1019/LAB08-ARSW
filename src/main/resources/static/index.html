@@ -8,27 +8,33 @@
         <script src="/webjars/sockjs-client/sockjs.min.js"></script>
         <script src="/webjars/stomp-websocket/stomp.min.js"></script>
         <script src="/app.js"></script>
+        <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
-        <label for="connect">WebSocket connection:</label>
-        <button id="connect" type="submit" onclick="app.connect()">Connect</button>
-        <button id="disconnect" type="submit" disabled="disabled" onclick="app.disconnect()">Disconnect</button>
-        X:<input id="x" type="number"/>
-        Y:<input id="y" type="number"/>        
-        <button onclick="app.sendPoint()">Send point</button>
-        <canvas id="canvas" width="800" height="600"></canvas>
-        <div class="row">
-            <div class="col-md-12">
-                <table id="pointslist" class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Points</th>
-                        </tr>
-                    </thead>
-                    <tbody id="points">
-                    </tbody>
-                </table>
-            </div>
+        <div id="topofpage">
+            <h1>Collaborative Drawing</h1>
+        </div>
+        <div id="menu">
+            <label for="connect">Connect and start drawing: </label>
+            &nbsp;&nbsp;<button id="connect" type="submit" onclick="app.connect()">Connect</button>
+            &nbsp;&nbsp;<button id="disconnect" type="submit" disabled="disabled" onclick="app.disconnect()">Disconnect</button>
+            &nbsp;&nbsp;&nbsp;X:&nbsp;<input id="x" type="number"/>
+            &nbsp;&nbsp;&nbsp;Y:&nbsp;<input id="y" type="number"/>        
+            &nbsp;&nbsp;&nbsp;<button onclick="app.sendPoint()">Send point</button>
+        </div>
+        <div>
+            <canvas id="canvas" width="900" height="600"></canvas>
+        </div>
+        <div>
+            <table id="pointslist" class="table">
+                <thead>
+                    <tr>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody id="points">
+                </tbody>
+            </table>
         </div>
     </body>
 </html>
