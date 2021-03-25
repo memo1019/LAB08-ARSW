@@ -18,9 +18,6 @@
             <label for="connect">Connect and start drawing: </label>
             &nbsp;&nbsp;<button id="connect" type="submit" onclick="app.connect()">Connect</button>
             &nbsp;&nbsp;<button id="disconnect" type="submit" disabled="disabled" onclick="app.disconnect()">Disconnect</button>
-            &nbsp;&nbsp;&nbsp;X:&nbsp;<input id="x" type="number"/>
-            &nbsp;&nbsp;&nbsp;Y:&nbsp;<input id="y" type="number"/>        
-            &nbsp;&nbsp;&nbsp;<button onclick="app.sendPoint()">Send point</button>
         </div>
         <div>
             <canvas id="canvas" width="900" height="600"></canvas>
