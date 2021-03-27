@@ -48,7 +48,8 @@ Para esto, realice lo siguiente:
 	```bash
 	git commit -m "PARTE 1".
 	```
-
+### Demostración
+![](img/demoparte1.png)
 
 ## Parte II.
 
@@ -62,6 +63,11 @@ Para hacer mas útil la aplicación, en lugar de capturar las coordenadas con ca
 	```bash
 	git commit -m "PARTE 2".
 	```
+### Demostración
+![](img/demoparte2.png)
+
+### Demostración
+![](img/demoparte2cel.png)
 
 ## Parte III.
 
